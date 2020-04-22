@@ -21,6 +21,7 @@ itranslate.js = requires-body=1,max-size=0,script-path=https://raw.githubusercon
 photoshop.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/photoshop.js,script-update-interval=0,type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile
 # > Lightroom
 Lightroom.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Lightroom.js,script-update-interval=0,type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts
-
+# > calm
+calm.vip.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/calm.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.calm\.com\/(me$|receipt$)
 [MITM]
-hostname = %APPEND% api.bilibili.com, app.bilibili.com, vsco.co, api.gyrosco.pe, api.gao1gps.cn, m.pearkin.com, ssl-api.itranslateapp.com, photos.adobe.io, lcs-mobile-cops.adobe.io
+hostname = %APPEND% api.bilibili.com, app.bilibili.com, vsco.co, api.gyrosco.pe, api.gao1gps.cn, m.pearkin.com, ssl-api.itranslateapp.com, photos.adobe.io, lcs-mobile-cops.adobe.io, api.calm.com, www.calm.com
