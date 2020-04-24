@@ -17,7 +17,7 @@ usr.app_config.active_products=[
             }
           }
         ],
-        
+      
 usr.app_config.reference= "active";
 usr.app_config.last_modified="Fri Nov 08 2019 17:35:48 GMT+0000 (UTC)";
 $done({body: JSON.stringify(obj)});
