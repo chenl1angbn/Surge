@@ -5,4 +5,3 @@ obj= {"licenses": [{"is_trial_period": true, "product_id": "com.itranslate.pro.y
 $done({body: JSON.stringify(obj)});
 
 // Descriptions
-// Descriptisdfld  sfmldmg  
