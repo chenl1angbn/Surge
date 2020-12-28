@@ -31,8 +31,9 @@ wb_launch = requires-body=true,script-path=https://raw.githubusercontent.com/che
 Aweme = type=http-response,pattern=^https://[\s\S]*/aweme/v1/(feed|aweme/post|follow/feed)/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chenl1angbn/Surge/master/Surge/Script/Aweme.js,script-update-interval=86400
 # > RRad
 RRad = type=http-response,pattern=^https://api\.rr\.tv[\s\S]*(channel|Feed|Choice|profile|Medal),requires-body=1,max-size=524288,script-path=https://raw.githubusercontent.com/chenl1angbn/Surge/master/Surge/Script/RRad.js,script-update-interval=86400
-
 # > pixiv
 pixiv_premium = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chenl1angbn/Surge/master/Surge/Script/pixiv_premium.js,script-update-interval=86400,type=http-response,pattern=https://oauth.secure.pixiv.net/auth/token
+# > iOS_Weather_AQI_Standard
+AQI-US = type=http-response, pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?, requires-body=true, script-path=https://raw.githubusercontent.com/chenl1angbn/Surge/master/Surge/Script/iOS_Weather_AQI_Standard.js
 [MITM]
-hostname = %APPEND% api.bilibili.com, app.bilibili.com, vsco.co, api.gyrosco.pe, api.gao1gps.cn, m.pearkin.com, ssl-api.itranslateapp.com, photos.adobe.io, lcs-mobile-cops.adobe.io, api.calm.com, www.calm.com, pixiv.net, pixiv.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, api.rr.tv, buy.itunes.apple.com
+hostname = %APPEND% api.bilibili.com, app.bilibili.com, vsco.co, api.gyrosco.pe, api.gao1gps.cn, m.pearkin.com, ssl-api.itranslateapp.com, photos.adobe.io, lcs-mobile-cops.adobe.io, api.calm.com, www.calm.com, pixiv.net, pixiv.com, *.uve.weibo.com, api.weibo.cn, mapi.weibo.com, api.rr.tv, buy.itunes.apple.com, weather-data.apple.com
