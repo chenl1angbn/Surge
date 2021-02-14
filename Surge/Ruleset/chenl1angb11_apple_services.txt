@@ -12,3 +12,23 @@ DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,organicfruitapps.com
+
+DOMAIN-SUFFIX,appsto.re
+DOMAIN,api-glb-sea.smoot.apple.com
+DOMAIN,audiocontentdownload.apple.com
+DOMAIN,beta.itunes.apple.com
+DOMAIN,books.itunes.apple.com
+DOMAIN,embed.music.apple.com
+DOMAIN,hls.itunes.apple.com
+DOMAIN,itunes.apple.com
+DOMAIN,lookup-api.apple.com
+DOMAIN,news-client.apple.com
+DOMAIN,news-edge.apple.com
+
+# >> Clubhouse
+USER-AGENT,Clubhouse*
+DOMAIN-KEYWORD,clubhouse
+DOMAIN-KEYWORD,agora
+DOMAIN-SUFFIX,clubhouseapi.com
+DOMAIN-SUFFIX,joinclubhouse.com
+DOMAIN,clubhouseprod.s3.amazonaws.com
