@@ -92,13 +92,13 @@ function constructAirQuailityNode(aqicnData) {
     airQualityNode.metadata.expireTime = timeConversion(new Date(aqicnData.time.iso), 'add-1h-floor')
     airQualityNode.metadata.language = language
 
-    airQualityNode.pollutants.CO.amount = aqicnData.iaqi.co ? .v || -1
-    airQualityNode.pollutants.SO2.amount = aqicnData.iaqi.so2 ? .v || -1
-    airQualityNode.pollutants.NO2.amount = aqicnData.iaqi.no2 ? .v || -1
-    airQualityNode.pollutants.NOX.amount = aqicnData.iaqi.nox ? .v || -1
-    airQualityNode.pollutants["PM2.5"].amount = aqicnData.iaqi.pm25 ? .v || -1
-    airQualityNode.pollutants.OZONE.amount = aqicnData.iaqi.o3 ? .v || -1
-    airQualityNode.pollutants.PM10.amount = aqicnData.iaqi.pm10 ? .v || -1
+    airQualityNode.pollutants.CO.amount = aqicnData.iaqi.co?.v || -1
+	airQualityNode.pollutants.SO2.amount = aqicnData.iaqi.so2?.v || -1
+	airQualityNode.pollutants.NO2.amount = aqicnData.iaqi.no2?.v || -1
+	airQualityNode.pollutants.NOX.amount = aqicnData.iaqi.nox?.v || -1
+	airQualityNode.pollutants["PM2.5"].amount = aqicnData.iaqi.pm25?.v || -1
+	airQualityNode.pollutants.OZONE.amount = aqicnData.iaqi.o3?.v || -1
+	airQualityNode.pollutants.PM10.amount = aqicnData.iaqi.pm10?.v || -1
 
     return airQualityNode
 }
@@ -119,7 +119,7 @@ function timeConversion(time, action) {
     return timeString;
 }
 
-$httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`, function(error, _response, data) {
+$httpClient.get(`https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`, function (error, _response, data) {
     if (error) {
         let body = $response.body
         $done({ body })
