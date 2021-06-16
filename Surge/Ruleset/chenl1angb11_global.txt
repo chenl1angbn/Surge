@@ -198,4 +198,12 @@ DOMAIN-SUFFIX,twimg.com,force-remote-dns
 DOMAIN-SUFFIX,twitpic.com,force-remote-dns
 DOMAIN-SUFFIX,twitter.com,force-remote-dns
 
+# >> Clubhouse
+USER-AGENT,Clubhouse*
+DOMAIN-KEYWORD,clubhouse
+DOMAIN-KEYWORD,agora
+DOMAIN-SUFFIX,clubhouseapi.com
+DOMAIN-SUFFIX,joinclubhouse.com
+DOMAIN,clubhouseprod.s3.amazonaws.com
+
 # --- End of General Global Services Section ---

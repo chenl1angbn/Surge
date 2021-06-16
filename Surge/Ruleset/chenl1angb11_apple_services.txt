@@ -24,11 +24,3 @@ DOMAIN,itunes.apple.com
 DOMAIN,lookup-api.apple.com
 DOMAIN,news-client.apple.com
 DOMAIN,news-edge.apple.com
-
-# >> Clubhouse
-USER-AGENT,Clubhouse*
-DOMAIN-KEYWORD,clubhouse
-DOMAIN-KEYWORD,agora
-DOMAIN-SUFFIX,clubhouseapi.com
-DOMAIN-SUFFIX,joinclubhouse.com
-DOMAIN,clubhouseprod.s3.amazonaws.com
